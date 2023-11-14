@@ -10,5 +10,5 @@ export type NumbersStructure ={
   eight: string;
   nine: string;
   cero: string;
-
+  delete: string;
 }

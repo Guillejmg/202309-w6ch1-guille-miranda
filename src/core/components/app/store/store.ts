@@ -1,9 +1,10 @@
 import { configureStore, ThunkAction, Action, AnyAction } from "@reduxjs/toolkit"
 import counterReducer from "../../../../features/components/counter/counterSlice"
+import phoneReducer from "../../../../features/components/phone/slices/phone.slice"
 
-export const store = configureStore({
+export const phoneStore = configureStore({
   reducer: {
-    counter: counterReducer,
+    phone:  phoneReducer,
   },
 })
 
@@ -15,7 +16,7 @@ export type AppThunk<ReturnType = void> = ThunkAction<
   unknown,
   Action<string>
 >
-function phoneReducer(state: unknown, action: AnyAction): unknown {
+function (state: unknown, action: AnyAction): unknown {
   throw new Error("Function not implemented.")
 }
 
